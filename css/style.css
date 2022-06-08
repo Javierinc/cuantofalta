@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Montserrat:wght@500;900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    /* background-color: #1D1E26; */
+    
     color: white;
+}
+body {
+    background-color: #1D1E26;
 }
 /* #282A36; */
 header {
@@ -15,32 +18,20 @@ header {
     justify-content: center;
     align-items: center;
     height: 5rem;
-    background-color: #fff;
+    background-color: #1D1E26;
 }
 a {
   
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: bold;
-    background-color: rgb(0,71,187);
+    font-weight: 900;
+    background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+    /* background-image: linear-gradient(to right, rgb(22, 94, 209), rgb(20, 108, 250)); */
+    letter-spacing: .2rem;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container-counters {
     display: flex;
@@ -49,7 +40,7 @@ a {
     gap: 1rem;
 }
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     color: #8998ba;
 }
@@ -72,6 +63,9 @@ h2 {
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: 0 4px 16px rgb(0 0 0 / 15%);
+}
+.countdown-9{
+    background-image: linear-gradient(to right, #3a6186, #89253e);
 }
 .container-times {
     display: flex;
@@ -102,3 +96,21 @@ p {
     font-size: 2rem;
 
 }
+
+@media screen and (min-width: 768px) {
+    .container-counters {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-heading {
+        text-align: center;
+    }
+    .container-times {
+        flex-direction: row;
+    }
+    .countdown {
+        flex-direction: column;
+        min-width: 40rem;
+    }
+}
+    
