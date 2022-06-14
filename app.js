@@ -203,7 +203,7 @@ const countdown8 = ()=>{
 }
 
 const countdown9 = ()=>{
-    const countDate = new Date('July 6, 2022 00:00:00').getTime();
+    const countDate = new Date('June 30, 2022 00:00:00').getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
 
